@@ -11,8 +11,8 @@
 </head>
 <body>
      <header class="jumbotron">
-		<h1 class="display-4"><a href="index.php">Tu tienda kúl | Panel de control</a></h1>
-		<h2 class="display-4"><small>Subtítulo casi tan kúl</small></h2>
+		<h1 class="display-4"><a href="index.php">Another random store | Panel de control</a></h1>
+		<h2 class="display-4"><small>Subtítulo de la tienda</small></h2>
 	</header>
      <section class="col-sm-12">
           <ol class="breadcrumb">

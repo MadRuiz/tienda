@@ -16,9 +16,8 @@
 </head>
 <body>
 	<header class="jumbotron">
-		<h1 class="display-4"><a href="index.php">Tu tienda kúl</a></h1>
-		<h2 class="display-4"><small>Subtítulo casi tan kúl</small></h2>
-	</header>
+     	<h1 class="display-4"><a href="index.php">Another random store</a></h1>
+          <h2 class="display-4"><small>Subtítulo de la tienda</small></h2></header>
      <div class="container-fluid">
           <div class="row">
      		<aside class="col-sm-3 order-3">
