@@ -59,7 +59,8 @@ if ($contador > 0) {
 }else {
      echo "<div class='container-fluid'>
                <div class='alert alert-danger' role='alert'>
-                    <p>El usuario no existe</p>
+                    <p>El usuario no existe. <a href='confirmar.php' class='alert-link'>
+                         Regresar</a></p>
                </div>
           </div>";
      echo '

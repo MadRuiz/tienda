@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/styles.css">
 <link rel="icon" href="img/favicon.png" type="image/png">
-<title>Sweets Store</title>
+<title>Tienda</title>
 </head>
 <body>
 	<header class="jumbotron">
