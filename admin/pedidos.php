@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="../css/bootstrap.css">
 <link rel="stylesheet" href="../css/styles.css">
 <link rel="icon" href="../img/favicon.png" type="image/png">
-<title>Sweets Store</title>
+<title>Tienda</title>
 </head>
 <body>
      <header class="jumbotron">
@@ -21,6 +21,19 @@
                <li class="breadcrumb-item">Pedidos</li>
           </ol>
      </section>
+          <section class="container">
+               <ul class="nav nav-tabs">
+                 <li class="nav-item">
+                   <a class="nav-link  active" href="pedidos.php">Pedidos</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Clientes</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Productos</a>
+                 </li>
+               </ul>
+          </section>
      <section class="container">
           <table class="table table-sm table-hover">
                <thead>

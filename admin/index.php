@@ -20,7 +20,7 @@
                <li class="breadcrumb-item">Administración</li>
           </ol>
      </section>
-     <section>
+     <section class="container">
           <ul class="nav nav-tabs">
             <li class="nav-item">
               <a class="nav-link" href="pedidos.php">Pedidos</a>
