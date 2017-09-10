@@ -33,7 +33,11 @@
             </li>
           </ul>
      </section>
-
+     <footer class="footer">
+          <div class="container">
+               <span class="text-muted">Portafolio de prácticas / WYCE II / Madelyn Ruíz </span>
+          </div>
+     </footer>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
 </body>
