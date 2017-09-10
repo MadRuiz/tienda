@@ -1,18 +1,38 @@
 <!DOCTYPE html>
-<html>
-     <head>
-          <meta charset="utf-8">
-          <title>Pedidos</title>
-     </head>
-     <body>
-          <table border="2">
-               <tr>
-                    <td>Nombre</td>
-                    <td>Estado</td>
-                    <td>Gestionar</td>
-                    <td>Enviar</td>
-                    <td>Cancelar</td>
-               </tr>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="icon" href="../img/favicon.png" type="image/png">
+<title>Sweets Store</title>
+</head>
+<body>
+     <header class="jumbotron">
+		<h1 class="display-4"><a href="index.php">Tu tienda kúl | Panel de control</a></h1>
+		<h2 class="display-4"><small>Subtítulo casi tan kúl</small></h2>
+	</header>
+     <section class="col-sm-12">
+          <ol class="breadcrumb">
+               <li class="breadcrumb-item active"><a href="../index.php">Tienda</a></li>
+               <li class="breadcrumb-item active"><a href="index.php">Administración</a></li>
+               <li class="breadcrumb-item">Pedidos</li>
+          </ol>
+     </section>
+     <section class="container">
+          <table class="table table-sm table-hover">
+               <thead>
+                    <tr>
+                         <th>Nombre</th>
+                         <th>Estado</th>
+                         <th>Gestionar</th>
+                         <th>Enviar</th>
+                         <th>Cancelar</th>
+                    </tr>
+               </thead>
+               <tbody>
                <?php
                include '../conexion.php';
                mysqli_set_charset($conexion, "utf8");
@@ -28,9 +48,9 @@
                     echo'
                     <tr';
                     switch ($estado) {
-                         case '0': echo ' style="background-color:rgb(255,200,200);"';break;
-                         case '1': echo ' style="background-color:rgb(200,255,200);"';break;
-                         case '2': echo ' style="background-color:rgc(255,255,255);"';break;
+                         case '0': echo ' class="table-danger"';break;
+                         case '1': echo ' class="table-info"';break;
+                         case '2': echo ' class="table-warning"';break;
                     }
                     echo '>
                          <td>'.$fila['nombre']." ".$fila['apellidos'].'</td>
@@ -53,7 +73,10 @@
                     </tr>';
                }
 mysqli_close($conexion);
-?>
-          </table>
-     </body>
+?>             </tbody>
+               </table>
+          </section>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</body>
 </html>

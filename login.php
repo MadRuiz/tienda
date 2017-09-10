@@ -1,7 +1,19 @@
+</div>
+</section>
+
 <?php
 session_start();
 include 'header.php';
 include 'conexion.php';
+?>
+<section class="col-sm-12">
+     <ol class="breadcrumb">
+          <li class="breadcrumb-item active"><a href="index.php">Inicio</a></li>
+          <li class="breadcrumb-item ">Confirmar pedido</li>
+          <li class="breadcrumb-item">Resultado</li>
+     </ol>
+</section>
+<?php
 $contador = 0;
 $peticion = "SELECT * FROM clientes WHERE usuario = '".$_POST['usuario']."' AND clave = '".$_POST['clave']."'";
 $resultado = mysqli_query($conexion, $peticion);
@@ -18,7 +30,10 @@ if ($contador > 0) {
      while ($fila = mysqli_fetch_array($resultado)) {
           $_SESSION['idpedido'] = $fila['idcliente'];
      }
-     echo "Pedidos realizados: ".$_SESSION['idpedido'];
+     echo "<div class='container'>
+               <p>Pedidos realizados: ".$_SESSION['idpedido']."</p>
+          </div>
+     ";
 
      for ($i=0; $i < $_SESSION['contador']; $i++) {
           $peticion = "INSERT INTO lineaspedido VALUES ('', '".$_SESSION['idpedido']."','".$_SESSION['producto'][$i]."','1')";
@@ -32,16 +47,29 @@ if ($contador > 0) {
                $resultado2  = mysqli_query($conexion, $peticion2);
           }
      }
-     echo "<br>Tu pedido se ha realizado satisfactoriamente :D";
+     echo "<div class='container-fluid'>
+               <div class='alert alert-success' role='alert'>
+                    <p>Tu pedido se ha realizado satisfactoriamente </p>
+               </div>
+          </div>";
      session_destroy();
      echo '
           <meta url="index.php">
      ';
 }else {
-     echo "El usuario no existe";
+     echo "<div class='container-fluid'>
+               <div class='alert alert-danger' role='alert'>
+                    <p>El usuario no existe</p>
+               </div>
+          </div>";
      echo '
           <meta url="confirmar.php">
      ';
 }
 mysqli_close($conexion);
 ?>
+</div>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>

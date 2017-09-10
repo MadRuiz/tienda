@@ -6,29 +6,33 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="content-type" content="text/html">
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-	<title>Tu tienda Kúl</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<title>Sweets Store</title>
 </head>
 <body>
-	<div id="contenedor" class="">
-		<header class="jumbotron">
-			<h1 class="display-4"><a href="index.php">Tu tienda kúl</a></h1>
-			<h2 class="display-4"><small>Subtítulo casi tan kúl</small></h2>
-		</header>
-		<section>
-			<div id="contienecarrito">
-				<div id="carrito" style="background:black;color:white;">
-					Carrito
-				</div>
-				<a href="destruir.php"><button>Vaciar carrito</button></a>
-				<a href="confirmar.php"><button>Confirma compra</button></a>
-		</section>
-	</div>
+	<header class="jumbotron">
+		<h1 class="display-4"><a href="index.php">Tu tienda kúl</a></h1>
+		<h2 class="display-4"><small>Subtítulo casi tan kúl</small></h2>
+	</header>
+     <div class="container-fluid">
+          <div class="row">
+     		<aside class="col-sm-3 order-3">
+               	<div id="contienecarrito">
+               		<div id="carrito" class="">
 
-
-</body>
-</html>
+               		</div>
+               		<a href="destruir.php" class="btnbtn-outline-light">
+                              <button class="btn btn-info">Vaciar </button>
+                         </a>
+               		<a href="confirmar.php" class="btnbtn-outline-light">
+                              <button class="btn btn-info">Confirmar compra</button>
+                         </a>
+                     </div>
+     		</aside>
+               <section class="col-sm-9 order-2 align-self-sm-start">
+                    <div class="row">
